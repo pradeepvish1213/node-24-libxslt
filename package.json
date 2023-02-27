@@ -1,12 +1,11 @@
 {
   "name": "@pradeepvish1213/seer-node-libxslt",
-  "version": "0.10.1",
+  "version": "0.10.3",
   "description": "[Fork] Node.js bindings for libxslt compatible with libxmljs",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec",
-    "docs": "jsdoc2md index.js --template readme.hbs > README.md",
-    "install": "node-gyp rebuild"
+    "docs": "jsdoc2md index.js --template readme.hbs > README.md"
   },
   "keywords": [
     "xml",
