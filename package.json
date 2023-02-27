@@ -1,11 +1,12 @@
 {
-  "name": "seer-node-libxslt",
+  "name": "@pradeepvish1213/seer-node-libxslt",
   "version": "0.10.1",
   "description": "[Fork] Node.js bindings for libxslt compatible with libxmljs",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec",
-    "docs": "jsdoc2md index.js --template readme.hbs > README.md"
+    "docs": "jsdoc2md index.js --template readme.hbs > README.md",
+    "install": "node-gyp rebuild"
   },
   "keywords": [
     "xml",
@@ -24,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/albanm/node-libxslt.git"
+    "url": "git+https://github.com/albanm/node-libxslt.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -37,5 +38,9 @@
     "jsdoc-to-markdown": "^7.0.1",
     "mocha": "^9.0.2",
     "should": "~13.2.3"
+  },
+  "gypfile": true,
+  "directories": {
+    "test": "test"
   }
 }
