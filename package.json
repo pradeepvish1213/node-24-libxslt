@@ -15,17 +15,17 @@
     "libxslt",
     "bindings"
   ],
-  "author": "Alban Mouton <alban.mouton@gmail.com>",
-  "homepage": "https://github.com/albanm/node-libxslt",
+  "author": "Pradeep Kumar Vishwakarma <pradeepvish1213@gmail.com>",
+  "homepage": "https://github.com/pradeepvish1213/seer-node-libxslt",
   "contributors": [
-    "Rui Azevedo <ruihfazevedo@gmail.com> (http://www.r-site.net/)"
+    "Prabodh More <pmore@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/albanm/node-libxslt/issues"
+    "url": "https://github.com/pradeepvish1213/seer-node-libxslt/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albanm/node-libxslt.git"
+    "url": "git+https://github.com/pradeepvish1213/seer-node-libxslt.git"
   },
   "license": "MIT",
   "dependencies": {
