@@ -1,5 +1,5 @@
 {
-  "name": "libxslt",
+  "name": "seer-node-libxslt",
   "version": "0.10.1",
   "description": "[Fork] Node.js bindings for libxslt compatible with libxmljs",
   "main": "index.js",
