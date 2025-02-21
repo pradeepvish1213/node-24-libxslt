@@ -6,13 +6,13 @@ Node.js bindings for [libxslt](http://xmlsoft.org/libxslt/) compatible with [lib
 Installation
 ------------
 
-    npm install @pradeepvish1213/seer-node-libxslt
+    npm install @pradeepvish1213/node-24-libxslt
 
 Basic usage
 -----------
 
 ```js
-var libxslt = require('@pradeepvish1213/seer-node-libxslt');
+var libxslt = require('@pradeepvish1213/node-24-libxslt');
 
 libxslt.parse(stylesheetString, function(err, stylesheet){
   var params = {
@@ -32,12 +32,12 @@ Libxmljs integration
 
 Node-libxslt depends on [libxmljs](https://github.com/polotek/libxmljs/issues/226) in the same way that [libxslt](http://xmlsoft.org/libxslt/) depends on [libxml](http://xmlsoft.org/). This dependancy makes possible to bundle and to load in memory libxml only once for users of both libraries.
 
-The libxmljs module required by node-libxslt is exposed as ```require('@pradeepvish1213/seer-node-libxslt').libxmljs```. This prevents depending on libxmljs twice which is not optimal and source of weird bugs.
+The libxmljs module required by node-libxslt is exposed as ```require('@pradeepvish1213/node-24-libxslt').libxmljs```. This prevents depending on libxmljs twice which is not optimal and source of weird bugs.
 
 It is possible to work with libxmljs documents instead of strings:
 
 ```js
-var lixslt = require('@pradeepvish1213/seer-node-libxslt');
+var lixslt = require('@pradeepvish1213/node-24-libxslt');
 var libxmljs = libxslt.libxmljs;
 
 var stylesheetObj = libxmljs.parseXml(stylesheetString, { nocdata: true });
@@ -68,7 +68,7 @@ The same *parse()* and *apply()* functions can be used in synchronous mode simpl
 In this case if a parsing error occurs it will be thrown.
 
 ```js
-var lixslt = require('@pradeepvish1213/seer-node-libxslt');
+var lixslt = require('@pradeepvish1213/node-24-libxslt');
 
 var stylesheet = libxslt.parse(stylesheetString);
 
@@ -79,7 +79,7 @@ var result = stylesheet.apply(documentString);
 The asynchronous functions use the [libuv work queue](http://nikhilm.github.io/uvbook/threads.html#libuv-work-queue)
 to provide parallelized computation in node.js worker threads. This makes it non-blocking for the main event loop of node.js.
 
-Note that @pradeepvish1213/seer-node-libxslt parsing doesn't use the work queue, so only a part of the process is actually parallelized.
+Note that @pradeepvish1213/node-24-libxslt parsing doesn't use the work queue, so only a part of the process is actually parallelized.
 
 A small benchmark is available in the project. It has a very limited scope, it uses always the same small transformation a few thousand times.
 To run it use:
@@ -118,7 +118,7 @@ Node-libxslt depends on [node-gyp](https://github.com/TooTallNate/node-gyp), you
 
 API Reference
 =============
-  Node.js bindings for @pradeepvish1213/seer-node-libxslt compatible with libxmljs
+  Node.js bindings for @pradeepvish1213/node-24-libxslt compatible with libxmljs
 
 <a name="module_libxslt.libxmljs"></a>
 ### libxslt.libxmljs
